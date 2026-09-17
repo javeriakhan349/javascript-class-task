@@ -6,7 +6,7 @@ var cities = [ "Islamabad", "Ahmed Nager", "Ahmadpur East", "Ali Khan", "Alipur"
 //     console.log(` ${i} ${cities[i]} is a city of Pakistan`);
 // }
 
-
+//Flag-Elements
 var city = prompt("Enter city name...")
 var flag = false;
 for( i=0 ; i<cities.length ; i++ ){
@@ -20,4 +20,3 @@ if(flag === false){
     
 console.log( ` ${city} doesnot belong to Pakistan`)
 }
-
