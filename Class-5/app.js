@@ -57,3 +57,19 @@ for ( j=0 ; j<fruits.length ; j++)
 if(flag === "false"){
     console.log("This fruit is not avaliable  "+userFruit.toLowerCase());
 }
+
+var userBirthmon = prompt(`Enter your birth month `)
+if( userBirthmon.length > 3){
+    console.log(userBirthmon.slice(0,3));
+}
+
+var fullName = "Javeria Shahid"
+var firstName = fullName.slice(0,7) 
+lastName = fullName.slice(8)
+console.log(firstName);
+console.log(lastName);
+
+var full = "javeria "
+var last = "shahid"
+console.log(full.slice(0,1).toUpperCase()+full.slice(1,7));
+console.log(last.slice(0,1).toUpperCase()+last.slice(1));
