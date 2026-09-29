@@ -1,4 +1,5 @@
-var hasAlphabet = false  ;
+var hasCapitalAlphabet = false  ;
+var hasSmallAlphabet = false  ;
 var hasNumber = false ;
 var startWithNumber = false ;
 var password = prompt("Enter a password")
@@ -12,8 +13,11 @@ for( i=0 ; i<password.length ; i++){
 if ( code>= 48 && code <= 57) {
     hasNumber = true ; 
 }
-if ( (code>= 65 && code>= 90) || (code >= 97 && code<=122) ) {
+if ( (code>= 65 && code>= 90) ) {
     hasAlphabet = true ; 
+}
+if(  (code >= 97 && code<=122) ){
+
 }
 }
 
