@@ -1,6 +1,6 @@
-var userCoin = prompt("Enter heads or tails...")
+var userCoin = prompt("Enter heads or tails...").toLowerCase()
 var result ; 
-var randomNum = Math.ceil(Math.random() * 2)-1  ;
+var randomNum = Math.floor(Math.random() * 2)  ;
 console.log(randomNum);
 if ( randomNum === 0) {
     result = "heads" ; 
@@ -12,6 +12,9 @@ else{
 }
 if ( userCoin === result) {
     console.log("You win !!!");
-} else {
+} else if ( userCoin === "heads" || userCoin === "tails") {
     console.log("You losttt");
+}
+else{
+    console.log("Invalid output entered");
 }
