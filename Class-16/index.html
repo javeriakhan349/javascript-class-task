@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Events</title>
 </head>
 <body>
+    <style>
+        table{
+            img{
+                width: 300px;
+                height: 500px;
+            }
+        }
+    </style>
+   <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Doe</td>
+                <td>9</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>James</td>
+                <td>8</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sarah</td>
+                <td>11</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Alex</td>
+                <td>9</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Emily</td>
+                <td>12</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Michael</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Jessica</td>
+                <td>8</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td >9</td>
+                <td>David</td>
+                <td>11</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <tr>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_2cFkVeZUta7I457Aag6HSjAZFd_lF_gcnmwKVXVMg&s" alt="" onclick="display(this)"></td>
+
+          <td>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGEz1AoVU_t5VccJlCNbnPa2TH62TTQbDNgcEmHI_wQ&s" alt="" onclick="display(this)">
+          </td></tr>
+          <tr>
+           <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyJE1mJQ2HUwfhc6hi-w4Po_gzfkyYcCCZ0aXOwuc5gbYi3cMqHKEKm-iL&s=10" alt="" onclick="display(this)"></td>
+        
+            <td><img src="https://cdn.thewirecutter.com/wp-content/media/2026/03/BEST-ANDROID-PHONES-2048px-9771.jpg?width=2048&quality=60&crop=2048:2048&auto=webp" alt="" onclick="display(this)"></td>
+        </tr>
+    </table>
+<div><button onclick="increment(this)">+</button>
+    <span id="number">0</span>
+    <button onclick="decrement(this)">—</button>     </div>
+    
+
     <script src="app.js"></script>
 </body>
 </html>
