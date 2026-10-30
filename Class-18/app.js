@@ -7,8 +7,9 @@ function deleteRow(e)
 }
 function editRow(e){
     var row = e.parentNode.parentNode
-console.log(row.children[0].innerHTML);
-console.log(row.children[1].innerHTML);
+    var currentName = row.children[0].textcontent
+    var currentAge = row.children[1].textcontent
+
 
 }
 function addStudent(e){
