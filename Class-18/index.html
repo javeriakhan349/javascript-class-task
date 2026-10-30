@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <div id="addStudentForm">
+        <h3>Edit Student Details</h3>
+        <form onsubmit="addStudent(event)" id="addStudentForm">
+            <label>Name:</label>
+            <input type="text" id="studentName" required>
+            <label>Age:</label>
+            <input type="text" id="studentAge" required>
+            <button type="submit">Add Student</button>
+         
+        
+        </form>
+    </div>
+ <h2>Student Records</h2>
+   <table border="2" width ="600">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Age</th>
+                <th>Action</th>
+                
+            </tr>
+        </thead>
+        <tbody id="StuTablebody">
+   
+        </tbody>
+    </table>
+<div id="editForm">
+    <h3>Edit Student Details</h3>
+    <form id="editStudentForm" onsubmit="savechanges(event)">
+        <label>Name:</label>
+        <input type="text" id="editName" required>
+        <label>Age:</label>
+        <input type="text" id="editAge" required>
+        <button type="submit">Save Changes</button>
+        <button type="button" onclick="closeEditForm()">Cancel</button>
+    </form>
+</div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
