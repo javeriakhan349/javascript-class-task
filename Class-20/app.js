@@ -1,0 +1,1 @@
+var character1 = document.getElementById("")
