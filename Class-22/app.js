@@ -14,3 +14,16 @@ var p = document.getElementsByClassName("para")
 p = p[0].childNodes[1]
 p = p.setAttribute("class","unique")
 console.log(p);
+
+var div = document.createElement("div")
+var p1 = document.createElement("p")
+var p2 = document.createElement("p")
+var but = document.createElement("button")
+var textBut = document.createTextNode("Remove")
+but.appendChild(textBut)
+p1.appendChild(text)
+p2.appendChild(text)
+document.body.appendChild(p1)
+document.body.appendChild(p2)
+document.body.appendChild(div)
+document.body.appendChild(but)
